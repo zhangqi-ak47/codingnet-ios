@@ -78,6 +78,9 @@ static dispatch_once_t e_Token;
     if (!aPath || aPath.length <= 0) {
         return;
     }
+    
+//    aPath = [kBaseUrlStr_Phone stringByAppendingString:aPath];
+    
     //CSRF - 跨站请求伪造
     NSHTTPCookie *_CSRF = nil;
     for (NSHTTPCookie *tempC in [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies]) {

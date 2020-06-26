@@ -782,6 +782,9 @@ typedef NS_ENUM(NSInteger, AnalyseMethodType) {
     }
     
     if (webStr) {
+        
+        webStr=[kBaseUrlStr_Phone stringByAppendingString:webStr];
+        
         NSURL *webURL = nil;
         if (![webStr hasPrefix:@"http"]) {
             webURL = [NSURL URLWithString:webStr relativeToURL:[NSURL URLWithString:[NSObject baseURLStr]]];

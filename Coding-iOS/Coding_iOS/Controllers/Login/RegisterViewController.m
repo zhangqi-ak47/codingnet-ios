@@ -87,7 +87,7 @@
     [self setupNav];
     self.myTableView.tableHeaderView = [self customHeaderView];
     self.myTableView.tableFooterView=[self customFooterView];
-    [self configBottomView];
+//    [self configBottomView];
 }
 
 - (void)refreshCaptchaNeeded{
@@ -268,7 +268,7 @@
     [lineLabel addLinkToTransitInformation:@{@"actionStr" : @"gotoServiceTermsVC"} withRange:[tipStr rangeOfString:@"《Coding 服务条款》"]];
     CGRect footerBtnFrame = _footerBtn.frame;
     lineLabel.frame = CGRectMake(CGRectGetMinX(footerBtnFrame), CGRectGetMaxY(footerBtnFrame) +15, CGRectGetWidth(footerBtnFrame), 15);
-    [footerV addSubview:lineLabel];
+//    [footerV addSubview:lineLabel];
     
     return footerV;
 }

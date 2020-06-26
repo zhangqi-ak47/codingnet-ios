@@ -806,7 +806,7 @@
 		7EB02FF31B6D111300D2166C /* AudioRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02FF01B6D111300D2166C /* AudioRecordView.m */; };
 		7EB02FF61B6DAF3800D2166C /* AudioVolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02FF51B6DAF3800D2166C /* AudioVolumeView.m */; };
 		7EB02FFC1B6E001300D2166C /* VoiceMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02FFB1B6E001300D2166C /* VoiceMedia.m */; };
-		7FD0104CFC28ED5705E0D5E8 /* libPods-Coding_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 645969FE6A8616A74543C249 /* libPods-Coding_iOS.a */; };
+		7FD0104CFC28ED5705E0D5E8 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		8B35164F1B6CE9460049BC45 /* icon_arrow_searchHistory@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B35164A1B6CE9460049BC45 /* icon_arrow_searchHistory@2x.png */; };
 		8B3516501B6CE9460049BC45 /* icon_topic_hotTop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B35164B1B6CE9460049BC45 /* icon_topic_hotTop@2x.png */; };
 		8B3516511B6CE9460049BC45 /* search_tweet_colck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B35164C1B6CE9460049BC45 /* search_tweet_colck@2x.png */; };
@@ -2242,7 +2242,6 @@
 		B1D5EE7120BC06CB00983FB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E477017198770E700997D05 /* UIKit.framework */; };
 		B1D5EE7220BC06CB00983FB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E477013198770E700997D05 /* Foundation.framework */; };
 		B1D5EE7320BC06CB00983FB6 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF818231B09D8D8005F974B /* WebP.framework */; };
-		B1D5EE7420BC06CB00983FB6 /* libPods-Coding_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 645969FE6A8616A74543C249 /* libPods-Coding_iOS.a */; };
 		B1D5EE7620BC06CB00983FB6 /* hot_topic_Nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E09DCA31C156387001C9392 /* hot_topic_Nav@2x.png */; };
 		B1D5EE7720BC06CB00983FB6 /* keyboard_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E97CE6B1A0B243B006F9AD7 /* keyboard_add@2x.png */; };
 		B1D5EE7820BC06CB00983FB6 /* register_step_un@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EC4800F1C2A909D005F1772 /* register_step_un@2x.png */; };
@@ -3128,6 +3127,7 @@
 		B9A00D7F1ACA3A05008BA008 /* ProjectSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9A00D7E1ACA3A05008BA008 /* ProjectSetting.storyboard */; };
 		B9A00D821ACA3A17008BA008 /* ProjectSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A00D811ACA3A17008BA008 /* ProjectSettingViewController.m */; };
 		B9A00D851ACA3A55008BA008 /* ProjectAdvancedSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A00D841ACA3A55008BA008 /* ProjectAdvancedSettingViewController.m */; };
+		C1588767002A405397DBACCF /* libPods-Coding_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4BE8F1A9A78F9B5C3DAC66 /* libPods-Coding_iOS.a */; };
 		D000E04A1BFC45CF00A33C2B /* CategorySearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D000E0491BFC45CF00A33C2B /* CategorySearchBar.m */; };
 		D02BE0AF1C0434DB008374C0 /* PRMRSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D02BE0AE1C0434DB008374C0 /* PRMRSearchCell.m */; };
 		D031F5DB1BFAD6690008E964 /* FRDLivelyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D031F5DA1BFAD6690008E964 /* FRDLivelyButton.m */; };
@@ -4383,7 +4383,6 @@
 		4EFF5A761E0AE54800683D03 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
 		59EA81AF0F8C7610F675E1EB /* Pods-Coding_iOS-Coding_Enterprise_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coding_iOS-Coding_Enterprise_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coding_iOS-Coding_Enterprise_iOS/Pods-Coding_iOS-Coding_Enterprise_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		627CA7E44F0D5A025A49E2F0 /* libPods-Coding_iOS-Coding_Enterprise_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Coding_iOS-Coding_Enterprise_iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		645969FE6A8616A74543C249 /* libPods-Coding_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Coding_iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E335D9A1B6F5E94003D0F3D /* keyboard_arrow_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_arrow_down@2x.png"; sourceTree = "<group>"; };
 		7E335D9B1B6F5E94003D0F3D /* keyboard_voice_record@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_voice_record@2x.png"; sourceTree = "<group>"; };
 		7E335D9C1B6F5E94003D0F3D /* keyboard_voice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_voice@2x.png"; sourceTree = "<group>"; };
@@ -4878,6 +4877,7 @@
 		927AFF571BFF755200AAE593 /* ExchangeGoodsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExchangeGoodsViewController.m; sourceTree = "<group>"; };
 		927AFF591BFF772A00AAE593 /* ShopOrderTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopOrderTextFieldCell.h; sourceTree = "<group>"; };
 		927AFF5A1BFF772A00AAE593 /* ShopOrderTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopOrderTextFieldCell.m; sourceTree = "<group>"; };
+		AF4BE8F1A9A78F9B5C3DAC66 /* libPods-Coding_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Coding_iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10341272024633800853447 /* logo_coding@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_coding@2x.png"; sourceTree = "<group>"; };
 		B10341282024633900853447 /* logo_coding@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_coding@3x.png"; sourceTree = "<group>"; };
 		B11DC7BE20245727004E76A9 /* button_terminal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_terminal@2x.png"; sourceTree = "<group>"; };
@@ -5567,7 +5567,8 @@
 				8E477018198770E700997D05 /* UIKit.framework in Frameworks */,
 				8E477014198770E700997D05 /* Foundation.framework in Frameworks */,
 				4EF818241B09D8D8005F974B /* WebP.framework in Frameworks */,
-				7FD0104CFC28ED5705E0D5E8 /* libPods-Coding_iOS.a in Frameworks */,
+				7FD0104CFC28ED5705E0D5E8 /* (null) in Frameworks */,
+				C1588767002A405397DBACCF /* libPods-Coding_iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5600,7 +5601,6 @@
 				B1D5EE7120BC06CB00983FB6 /* UIKit.framework in Frameworks */,
 				B1D5EE7220BC06CB00983FB6 /* Foundation.framework in Frameworks */,
 				B1D5EE7320BC06CB00983FB6 /* WebP.framework in Frameworks */,
-				B1D5EE7420BC06CB00983FB6 /* libPods-Coding_iOS.a in Frameworks */,
 				74BCC5B7B071C6418DBC18C7 /* libPods-Coding_iOS-Coding_Enterprise_iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -7181,8 +7181,8 @@
 				8E477017198770E700997D05 /* UIKit.framework */,
 				8E477019198770E700997D05 /* CoreData.framework */,
 				8E477031198770E700997D05 /* XCTest.framework */,
-				645969FE6A8616A74543C249 /* libPods-Coding_iOS.a */,
 				627CA7E44F0D5A025A49E2F0 /* libPods-Coding_iOS-Coding_Enterprise_iOS.a */,
+				AF4BE8F1A9A78F9B5C3DAC66 /* libPods-Coding_iOS.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -9275,7 +9275,7 @@
 				ORGANIZATIONNAME = Coding;
 				TargetAttributes = {
 					8E47700F198770E700997D05 = {
-						DevelopmentTeam = QN5Z87S3LH;
+						DevelopmentTeam = M8FZJBTA43;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -9290,7 +9290,7 @@
 						};
 					};
 					B1D5EBF120BC06CB00983FB6 = {
-						DevelopmentTeam = QN5Z87S3LH;
+						DevelopmentTeam = M8FZJBTA43;
 						SystemCapabilities = {
 							com.apple.SafariKeychain = {
 								enabled = 0;
@@ -9304,6 +9304,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				"zh-Hans",
 				de,
@@ -12766,7 +12767,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = QN5Z87S3LH;
+				DEVELOPMENT_TEAM = M8FZJBTA43;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -12792,7 +12793,7 @@
 					"$(PROJECT_DIR)/Coding_iOS/Vendor/XGPush",
 					"$(PROJECT_DIR)/Coding_iOS/Util/Audio/opencore-amr-iOS/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.coding.CodingForiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhangqi.zhangduo;
 				PRODUCT_NAME = Coding_iOS;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -12810,7 +12811,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = QN5Z87S3LH;
+				DEVELOPMENT_TEAM = M8FZJBTA43;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -12836,7 +12837,7 @@
 					"$(PROJECT_DIR)/Coding_iOS/Vendor/XGPush",
 					"$(PROJECT_DIR)/Coding_iOS/Util/Audio/opencore-amr-iOS/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.coding.CodingForiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhangqi.zhangduo;
 				PRODUCT_NAME = Coding_iOS;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -12854,7 +12855,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = QN5Z87S3LH;
+				DEVELOPMENT_TEAM = M8FZJBTA43;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -12880,7 +12881,7 @@
 					"$(PROJECT_DIR)/Coding_iOS/Vendor/XGPush",
 					"$(PROJECT_DIR)/Coding_iOS/Util/Audio/opencore-amr-iOS/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.coding.CodingEnterpriseForiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhangqi.zhangduoduo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -12898,7 +12899,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = QN5Z87S3LH;
+				DEVELOPMENT_TEAM = M8FZJBTA43;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -12924,7 +12925,7 @@
 					"$(PROJECT_DIR)/Coding_iOS/Vendor/XGPush",
 					"$(PROJECT_DIR)/Coding_iOS/Util/Audio/opencore-amr-iOS/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.coding.CodingEnterpriseForiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhangqi.zhangduoduo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

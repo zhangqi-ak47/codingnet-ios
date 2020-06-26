@@ -555,7 +555,7 @@ typedef NS_ENUM(NSUInteger, LoginStep) {
     self.myTableView.tableFooterView=[self customFooterView];
     [self configBottomView];
     [self showdismissButton:self.showDismissButton];
-    [self buttonFor2FA];
+//    [self buttonFor2FA];
     
     [self refreshCaptchaNeeded];
     //    [self refreshIconUserImage];
@@ -860,11 +860,11 @@ typedef NS_ENUM(NSUInteger, LoginStep) {
 
 #pragma mark Btn Clicked
 - (void)sendLogin{
-    NSString *tipMsg = self.is2FAUI? [self loginTipFor2FA]: [_myLogin goToLoginTipWithCaptcha:_captchaNeeded];
-    if (tipMsg) {
-        kTipAlert(@"%@", tipMsg);
-        return;
-    }
+//    NSString *tipMsg = self.is2FAUI? [self loginTipFor2FA]: [_myLogin goToLoginTipWithCaptcha:_captchaNeeded];
+//    if (tipMsg) {
+//        kTipAlert(@"%@", tipMsg);
+//        return;
+//    }
     
     [self.view endEditing:YES];
     if (!_activityIndicator) {
@@ -899,23 +899,23 @@ typedef NS_ENUM(NSUInteger, LoginStep) {
         [[Coding_NetAPIManager sharedManager] request_Login_WithPath:[self.myLogin toPath] Params:[self.myLogin toParams] andBlock:^(id data, NSError *error) {
             weakSelf.loginBtn.enabled = YES;
             [weakSelf.activityIndicator stopAnimating];
-            if (data) {
+//            if (data) {
                 [Login setPreUserEmail:self.myLogin.email];//记住登录账号
                 [((AppDelegate *)[UIApplication sharedApplication].delegate) setupTabViewController];
                 [self doSomethingAfterLogin];
-            }else{
-                NSString *global_key = error.userInfo[@"msg"][@"two_factor_auth_code_not_empty"];
-                if (global_key.length > 0) {
-                    [weakSelf changeUITo2FAWithGK:global_key];
-                }else if (error.userInfo[@"msg"][@"user_need_activate"]){
-                    [NSObject showError:error];
-                    ActivateViewController *vc = [ActivateViewController new];
-                    [self.navigationController pushViewController:vc animated:YES];
-                }else{
-                    [NSObject showError:error];
-                    [weakSelf refreshCaptchaNeeded];
-                }
-            }
+//            }else{
+//                NSString *global_key = error.userInfo[@"msg"][@"two_factor_auth_code_not_empty"];
+//                if (global_key.length > 0) {
+//                    [weakSelf changeUITo2FAWithGK:global_key];
+//                }else if (error.userInfo[@"msg"][@"user_need_activate"]){
+//                    [NSObject showError:error];
+//                    ActivateViewController *vc = [ActivateViewController new];
+//                    [self.navigationController pushViewController:vc animated:YES];
+//                }else{
+//                    [NSObject showError:error];
+//                    [weakSelf refreshCaptchaNeeded];
+//                }
+//            }
         }];
     }
 }
@@ -939,7 +939,8 @@ typedef NS_ENUM(NSUInteger, LoginStep) {
 }
 
 - (IBAction)cannotLoginBtnClicked:(id)sender {
-    CannotLoginViewController *vc = [CannotLoginViewController vcWithMethodType:CannotLoginMethodPhone stepIndex:0 userStr:([self.myLogin.email isPhoneNo]? self.myLogin.email: nil)];
+//    CannotLoginViewController *vc = [CannotLoginViewController vcWithMethodType:CannotLoginMethodPhone stepIndex:0 userStr:([self.myLogin.email isPhoneNo]? self.myLogin.email: nil)];
+    CannotLoginViewController *vc = [CannotLoginViewController vcWithMethodType:CannotLoginMethodEamil stepIndex:0 userStr:([self.myLogin.email isPhoneNo]? self.myLogin.email: nil)];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -947,7 +948,8 @@ typedef NS_ENUM(NSUInteger, LoginStep) {
     if (self.navigationController.viewControllers.count > 1) {
         [self.navigationController popToRootViewControllerAnimated:YES];
     }else{
-        RegisterViewController *vc = [RegisterViewController vcWithMethodType:RegisterMethodPhone registerObj:nil];
+//        RegisterViewController *vc = [RegisterViewController vcWithMethodType:RegisterMethodPhone registerObj:nil];
+        RegisterViewController *vc = [RegisterViewController vcWithMethodType:RegisterMethodEamil registerObj:nil];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
@@ -977,14 +979,14 @@ typedef NS_ENUM(NSUInteger, LoginStep) {
     _is2FAUI = is2FAUI;
     UILabel *headerL = self.myTableView.tableHeaderView.subviews.firstObject;
     headerL.text = self.is2FAUI? @"两步验证": @"登录";
-    if (!_is2FAUI) {
-        self.otpCode = nil;
-        [_buttonFor2FA setTitle:@"  两步验证" forState:UIControlStateNormal];
-        [_buttonFor2FA setImage:[[UIImage imageNamed:@"twoFABtn_Nav"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
-    }else{
-        [_buttonFor2FA setTitle:@"关闭两步验证" forState:UIControlStateNormal];
-        [_buttonFor2FA setImage:nil forState:UIControlStateNormal];
-    }
+//    if (!_is2FAUI) {
+//        self.otpCode = nil;
+//        [_buttonFor2FA setTitle:@"  两步验证" forState:UIControlStateNormal];
+//        [_buttonFor2FA setImage:[[UIImage imageNamed:@"twoFABtn_Nav"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
+//    }else{
+//        [_buttonFor2FA setTitle:@"关闭两步验证" forState:UIControlStateNormal];
+//        [_buttonFor2FA setImage:nil forState:UIControlStateNormal];
+//    }
     [self.myTableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:_is2FAUI? UITableViewRowAnimationLeft: UITableViewRowAnimationRight];
 }
 
